@@ -4,6 +4,7 @@ from tensorflow.keras.layers import Input, LSTM, Dense
 import numpy as np
 
 units = 1000
+number_of_notes = 64
 
 'layer 1 is the encoder'
 encoder_inputs = Input(shape=(None, 15))
@@ -45,7 +46,7 @@ decoder_model = keras.Model(
 'output is (128, 57)'
 
 
-model.load_weights('lstm_units_1000_batch_64_whole_dataset.h5')
+model.load_weights('./music_utils/lstm_units_1000_batch_64_whole_dataset.h5')
 print('loaded weights')
 
 def map_notes_to_one_octave(note_values):
@@ -129,8 +130,6 @@ def one_hot_phrase_to_note_values(one_hot_phrase):
             note_values[i] = index[0]
     return note_values
 
-
-number_of_notes = 64
 def get_music(notes):
     print('here')
     
