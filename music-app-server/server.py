@@ -1,8 +1,8 @@
 from flask import Flask
+
 from music_utils.music import get_music
 
 app = Flask(__name__)
-
 
 @app.route('/music/<notes>')
 def music(notes):
