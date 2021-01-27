@@ -1,7 +1,7 @@
 import React from "react";
 import { NoteRow } from "./note-row/note-row";
 
-export const MusicPlayer = () => {
+export const MusicEditor = () => {
   return (
     <div draggable={false}>
       <NoteRow />

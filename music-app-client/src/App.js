@@ -1,7 +1,7 @@
-import { MusicPlayer } from "./music-player/music-player";
+import { MusicEditor } from "./music-editor/music-editor";
 
 function App() {
-  return <MusicPlayer />;
+  return <MusicEditor />;
 }
 
 export default App;
