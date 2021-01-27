@@ -1,3 +1,5 @@
 node_modules/
 .vscode
 .ipynb_checkpoints
+music-app-client/.eslintcache
+__pycache__/
