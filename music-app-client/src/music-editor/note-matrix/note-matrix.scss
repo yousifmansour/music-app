@@ -1,0 +1,21 @@
+.note-row__row {
+  width: 100%;
+}
+
+.note-row__row .note-row__note {
+  fill: white;
+  stroke: rgba(0, 0, 0, 0.616);
+  stroke-width: 0.25px;
+
+  &:hover {
+    opacity: 0.5;
+    fill: #39ff14;
+  }
+
+  &.note-selected {
+    fill: #39ff14;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
