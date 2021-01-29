@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { AudioControls } from "./audio-controls/audio-controls";
 import "./music-editor.css";
 import { NoteMatrix } from "./note-matrix/note-matrix";
 
@@ -32,7 +33,10 @@ export const MusicEditor = () => {
   return (
     <>
       <div style={{ overflowX: "visible", overflowY: "visible" }}>
-        <h1>Music App</h1>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h1>Music App</h1>
+          <AudioControls />
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="music-editor-svg-layer"
