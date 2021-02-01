@@ -1,4 +1,4 @@
-// TODO: see https://github.com/kevincennis/TinyMusic
+// TODO: see https://github.com/kevincennis/TinyMusic, or understand oscillator node a bit more
 
 function noteToHz(note: number) {
   return Math.pow(Math.pow(2, 1 / 12), note - 49) * 440;
